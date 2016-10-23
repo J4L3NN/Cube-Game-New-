@@ -53,64 +53,17 @@ class Entities: SKScene, SKPhysicsContactDelegate {
 
     }
 
-    /*  let jump = [SKAction.runBlock {
-            if physicsWorld.gravity == CGVector(dx: 10,dy: -90) {
-                physicsWorld.gravity = CGVector(dx: 10,dy: 90)
-            }
-            if physicsWorld.gravity == CGVector(dx: -10,dy: -90) {
-
-            }
-        }]
-        let fall = [SKAction.runBlock {
-            if physicsWorld.gravity = CGVector(dx: -10,dy: 0) {
-
-            }
-        }]
-    */
-
-    // Player Jumping Actions, Note: Enemies will not be effected by gravity, they'll use a different movement system.
-
-    func jump() -> SKAction {
-        return SKAction.run({
-            if self.physicsWorld.gravity == CGVector(dx: 10,dy: -90) {
-                self.physicsWorld.gravity = CGVector(dx: 10,dy: 90)
-            }
-            if self.physicsWorld.gravity == CGVector(dx: -10,dy: -90) {
-                self.physicsWorld.gravity = CGVector(dx: -10,dy: 90)
-            }
-            if self.physicsWorld.gravity == CGVector(dx: 0, dy: -90) {
-                self.physicsWorld.gravity = CGVector(dx: 0,dy: 90)
-            }
-        })
-    }
-
-    func fall() -> SKAction {
-        return SKAction.run({
-            if self.physicsWorld.gravity == CGVector(dx: 10,dy: 90) {
-                self.physicsWorld.gravity = CGVector(dx: 10,dy: -90)
-            }
-            if self.physicsWorld.gravity == CGVector(dx: -10,dy: 90) {
-                self.physicsWorld.gravity = CGVector(dx: -10,dy: -90)
-            }
-            if self.physicsWorld.gravity == CGVector(dx: 0, dy: 90) {
-                self.physicsWorld.gravity = CGVector(dx: 0,dy: -90)
-            }
-        })
-
-
-    }
-
     // TEST MAP
 
     func testMap() {
-        var point = anchorPoint
-        var point2 = anchorPoint
+        walls(p:CGPoint(x: anchorPoint.x,y: anchorPoint.y - 160))
+        walls(p:CGPoint(x: anchorPoint.x - 32,y: anchorPoint.y - 160))
+        walls(p:CGPoint(x: anchorPoint.x + 32,y: anchorPoint.y - 160))
 
-        var p = 0
-        var p2 = 0
+        walls(p:CGPoint(x: anchorPoint.x,y: anchorPoint.y + 160))
+        walls(p:CGPoint(x: anchorPoint.x - 32,y: anchorPoint.y + 160))
+        walls(p:CGPoint(x: anchorPoint.x + 32,y: anchorPoint.y + 160))
 
-        while p <= 15 {walls(p: point); point = CGPoint(x: point.x + 32, y: point.y); p = p + 1}
-        while p2 <= 15 {walls(p: point2); point2 = CGPoint(x: point2.x - 32, y: point2.y); p2 = p2 + 1}
 
     }
 

@@ -13,12 +13,12 @@ class GameScene: Entities {
 
     func swipedRight(sender:UISwipeGestureRecognizer){
         print("Swiped Right")
-        physicsWorld.gravity = CGVector(dx: 10,dy: -90)
+        physicsWorld.gravity = CGVector(dx: 90,dy: 0)
     }
 
     func swipedLeft(sender:UISwipeGestureRecognizer){
         print("Swiped Left")
-        physicsWorld.gravity = CGVector(dx: -10,dy: -90)
+        physicsWorld.gravity = CGVector(dx: -90,dy: 0)
     }
 
     func swipedDown(sender:UISwipeGestureRecognizer){
@@ -26,11 +26,9 @@ class GameScene: Entities {
         physicsWorld.gravity = CGVector(dx: 0,dy: -90)
     }
 
-    // Jump
-
     func swipedUp(sender:UISwipeGestureRecognizer){
         print("Swiped Up")
-        player.run(SKAction.sequence([jump() , SKAction.wait(forDuration: 0.5), fall() ]))
+        physicsWorld.gravity = CGVector(dx: 0,dy: 90)
     }
 
 
@@ -60,7 +58,6 @@ class GameScene: Entities {
 
         playProp()
         testMap()
-        walls(p: CGPoint(x: anchorPoint.x, y: anchorPoint.y - 32))
         self.camera = cam
     }
 
@@ -69,6 +66,5 @@ class GameScene: Entities {
 
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        cam.position = player.position
     }
 }

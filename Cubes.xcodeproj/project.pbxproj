@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		603752606C428D5A1C39A04E /* Cube 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 60375DC84C4196AB4BBDD47D /* Cube 2.png */; };
 		603755BCF54B55077AE3D9F0 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037556FB9D0CD5C0470AC15 /* Entities.swift */; };
-		6037563CD7BAD5B980DA2923 /* Cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 60375178A23091F338DDE840 /* Cube.png */; };
+		6037596C96E436EB4F1AC732 /* Cube 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 60375790AD5ECB26559D432F /* Cube 2.png */; };
+		60375AFCF0CAAC1D24E95E91 /* Cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 603753D5F48132E529FFFCEE /* Cube.png */; };
 		F74E92341DB8526A00795C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74E92331DB8526A00795C6F /* AppDelegate.swift */; };
 		F74E92361DB8526A00795C6F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F74E92351DB8526A00795C6F /* GameScene.sks */; };
 		F74E92381DB8526A00795C6F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F74E92371DB8526A00795C6F /* Actions.sks */; };
@@ -40,9 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60375178A23091F338DDE840 /* Cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cube.png; sourceTree = "<group>"; };
+		603753D5F48132E529FFFCEE /* Cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cube.png; sourceTree = "<group>"; };
 		6037556FB9D0CD5C0470AC15 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
-		60375DC84C4196AB4BBDD47D /* Cube 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cube 2.png"; sourceTree = "<group>"; };
+		60375790AD5ECB26559D432F /* Cube 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cube 2.png"; sourceTree = "<group>"; };
 		F74E92301DB8526A00795C6F /* Cubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cubes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74E92331DB8526A00795C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F74E92351DB8526A00795C6F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 		6037542886223B4B3BCA9E41 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				60375DC84C4196AB4BBDD47D /* Cube 2.png */,
-				60375178A23091F338DDE840 /* Cube.png */,
+				60375790AD5ECB26559D432F /* Cube 2.png */,
+				603753D5F48132E529FFFCEE /* Cube.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 				F74E92411DB8526A00795C6F /* Assets.xcassets in Resources */,
 				F74E92441DB8526A00795C6F /* LaunchScreen.storyboard in Resources */,
 				F74E92381DB8526A00795C6F /* Actions.sks in Resources */,
-				603752606C428D5A1C39A04E /* Cube 2.png in Resources */,
-				6037563CD7BAD5B980DA2923 /* Cube.png in Resources */,
+				6037596C96E436EB4F1AC732 /* Cube 2.png in Resources */,
+				60375AFCF0CAAC1D24E95E91 /* Cube.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
