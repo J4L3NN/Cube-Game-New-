@@ -13,7 +13,7 @@ class GameScene: Entities {
 
     func swipedRight(sender:UISwipeGestureRecognizer){
         print("Swiped Right")
-        physicsWorld.gravity = CGVector(dx: 10,dy: -90)
+        physicsWorld.gravity = CGVector(dx: -10,dy: -90)
     }
 
     func swipedLeft(sender:UISwipeGestureRecognizer){
